@@ -64,7 +64,7 @@
 //         const textArea = React.DOM.textarea({ defaultValue: this.state.text, onChange: this.submit.bind(this) }, null)
 //         // const btn = React.DOM.button({ onClick: this.submit.bind(this) }, "Submit")
 //         const h1 = React.DOM.h1(null, this.state.text);
-//         const h2 = React.DOM.h2({null}, this.state.text.length);
+//         const h2 = React.DOM.h2(null, this.state.text.length);
 //         return React.DOM.div({ id: "form" }, textArea, h1, h2)
 //     }
 // }
@@ -80,38 +80,39 @@
 
 
 
-class ABC extends React.Component {
-    //har class me constructor banta hai or us ke andar super bnta hai warna parent class React.COmponnet nh chalegi
-    constructor(prop) { //re render krne ke liye bhi 
-        super(prop)
-        this.state = {  //state jo hai render ko update krne ke liye hota hai
-            count: 0, // render ko autocall krne ke liye banta hai state
-        }
-    }
-    increm(event) { //state ko update krne ke liye setState ka method
-        this.setState({count:++ event.state }) //jese hee state update hoti hai render autocall hota hai
-        // console.log(event.target) // setState basically state ki cheezain doosre function me lane ke liye hota hai
-    }
-    // decrem(ev){
+// class ABC extends React.Component {
+//     //har class me constructor banta hai or us ke andar super bnta hai warna parent class React.COmponnet nh chalegi
+//     constructor(prop) { //re render krne ke liye bhi 
+//         super(prop)
+//         this.state = {  //state jo hai render ko update krne ke liye hota hai
+//             count: 0, // render ko autocall krne ke liye banta hai state
+//         }
+//     }
+//     increm(event) { //state ko update krne ke liye setState ka method
+//         this.setState({count: event.target.value}) //jese hee state update hoti hai render autocall hota hai
+//         console.log(++event.target.value) // setState basically state ki cheezain doosre function me lane ke liye hota hai
+//     }
+//     decrem(ev){
+//         this.setState({count: --ev.target.value})
+//         console.log(--ev.target.value)
+//     }
 
-    // }
-
-    //render poori UI (all html) ke liye hota hai poori UI render me banti hai 
-    render() {
-        // const textArea = React.DOM.textarea({ defaultValue: this.state.text, onChange: this.submit.bind(this) }, null)
-        // const btn = React.DOM.button({ onClick: this.submit.bind(this) }, "Submit")
-        const incr = React.DOM.button({ onClick: this.increm.bind(this) }, "Increment");
-        // const decr = React.DOM.button({ onClick: this.decrem.bind(this) }, "Decrement");
-        const h1 = React.DOM.h1(null,this.state.count)
-        return React.DOM.div({ id: "form" }, incr)
-    }
-}
-
-
-
+//     //render poori UI (all html) ke liye hota hai poori UI render me banti hai 
+//     render() {
+//         // const textArea = React.DOM.textarea({ defaultValue: this.state.text, onChange: this.submit.bind(this) }, null)
+//         // const btn = React.DOM.button({ onClick: this.submit.bind(this) }, "Submit")
+//         const incr = React.DOM.button({ onClick: this.increm.bind(this) }, "Increment");
+//         const decr = React.DOM.button({ onClick: this.decrem.bind(this) }, "Decrement");
+//         const h1 = React.DOM.h1(null,this.state.count)
+//         return React.DOM.div({ id: "form" },decr, incr,h1)
+//     }
+// }
 
 
-ReactDOM.render(
-    React.createElement(ABC),
-    document.getElementById("root")
-);
+
+
+
+// ReactDOM.render(
+//     React.createElement(ABC),
+//     document.getElementById("root")
+// );
