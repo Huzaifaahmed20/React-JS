@@ -1,3 +1,6 @@
+//userinput on console
+
+
 // class ABC extends React.Component{
 // submit(){
 //     console.log(this.check.value)
@@ -17,6 +20,10 @@
 // React.createElement(ABC),
 // document.getElementById("root")    
 // );
+
+
+
+//User input on console
 
 // class ABC extends React.Component {
 //     //har class me constructor banta hai or us ke andar super bnta hai warna parent class React.COmponnet nh chalegi
@@ -46,6 +53,11 @@
 // );
 
 
+
+
+
+
+//text changes on real time and words count
 
 // class ABC extends React.Component {
 //     //har class me constructor banta hai or us ke andar super bnta hai warna parent class React.COmponnet nh chalegi
@@ -79,6 +91,14 @@
 // );
 
 
+
+
+
+
+
+
+
+//Increment and Decrement values in realtime
 
 // class ABC extends React.Component {
 //     //har class me constructor banta hai or us ke andar super bnta hai warna parent class React.COmponnet nh chalegi
